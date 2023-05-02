@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;  
+    
+    
+    background: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  background-blend-mode: lighten;
+  opacity: 0.6s;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.card{
+    width: 400px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 50px;
+}
+.img-hero img{
+    width: 100%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.discripition{
+    text-align: center;
+    padding: 25px;
+    color: var(--Dark-blue);
+}
+.discripition p{
+    margin-top: 25px;
+    color: var(--Desaturated-blue);
+}
+.tag{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    
+}
+.tag img{
+    width: 50px;
+    height: 50px;
+    margin-top: 24px;
+}
+.tag .price{
+    display: inline-block;
+
+}
+.tag a{
+    color: var(--Bright-blue);
+    margin-top: 15px;
+}
+.footer-cart{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding:30px
+}
+.pay{
+    color: var(--Very-pale-blue);
+    background-color: var(--Bright-blue);
+    text-decoration: none;
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -4px 7px 5px 1px rgba(207,205,207,1);
+    font-weight: 900;
+    font-size: 15px;
+    
+}
+.cancel{
+    margin-top: -17px;
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    width: 300px;
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--Desaturated-blue);
+
+}
+.cancel:active,.cancel:hover{
+    color: var(--Dark-blue);
+}
+.pay:active,.pay:hover{
+    background-color: var(--Desaturated-blue);
+}
+@media screen and (max-width:490px) {
+    .card{
+        width: 330px;
+    }
+    .pay,.cancel{
+        width: 230px;
+        margin: 0 auto;
+    }
+    .footer-cart{
+        padding: 15px 0;
+    }
+}
+footer{
+    position: fixed;
+    bottom: 10px;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
