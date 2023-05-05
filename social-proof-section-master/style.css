@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+html{
+  overflow-x: hidden;
+    
+}
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+main{
+    background-color: var(--White);
+    background-image: url(./images/bg-pattern-bottom-desktop.svg),url(./images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom,top;
+    padding: 6rem 7rem;
+    color: var(--Very-Dark-Magenta);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+.container .right h1{
+    font-size: 4rem;
+    margin-bottom: 2.2rem;
+}
+.container .right p{
+    color: var(--Dark-Grayish-Magenta);
+    margin-top: .5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 30px;
+    width: 50vw;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+ .rating{
+    padding: 1rem 4.2rem 1rem 4.2rem;
+    background: var(--Light-Grayish-Magenta);
+    border-radius: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    
+}
+.star{
+   margin-right: 2.5rem;
+   display: flex
+   
+}
+.star img{
+    margin: 3px;
+}
+.r-1{
+    position: relative;
+    right: 90px;
+}
+.r-3{
+    position: relative;
+    left: 90px;
+}
+.profile{
+    
+    flex: 1;
+    background: var(--Very-Dark-Magenta);
+    padding: 2rem;
+    color: var(--White);
+    text-align: center;
+    border-radius: 10px;
+
+}
+.users{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.profile img{
+    width: 3rem;
+    border-radius: 50%;
+}
+.person{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+.person div{
+    text-align: center;
+    margin-left: 2rem;
+}
+span{
+    margin-top: 8px;
+    margin-right: 2.2rem;
+    color: var(--Soft-Pink);
+}
+h2{
+    font-size: 1.5rem;
+}
+.profile p{
+    font-size: 15px;
+}
+.p-1{
+    position: relative;
+    bottom: 1rem;
+}
+.p-2{
+    position: relative;
+    top: 1rem;
+}
+@media  screen  and (max-width:1220px) {
+    .container .right h1{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .container .right p{
+        font-size: 1.3rem;
+        width: 40vw;
+    }
+    .p-1,.p-2{
+        top: auto;
+        bottom: auto;
+    }
+}
+@media screen and (max-width:1100px){
+    .rating{
+        padding: .8rem 3rem;
+    }
+    .container .right h1{
+        font-size: 2.7rem;
+    }
+    .container .right p{
+        font-size: 1.1rem;
+        width: unset;
+    }
+}
+@media screen and (max-width:950px){
+    .container{
+        flex-direction: column;
+    }
+    .container .right h1{
+        font-size: 3rem;
+    }
+    .container .right p{
+        font-size: 1.1rem;
+        width: unset;
+    }
+    .rating{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem 3.9rem;
+    }
+    .left{
+        justify-content: unset;
+    }
+    .r-1,.r-3{
+        right: auto;
+        left: auto;
+    }
+    main{
+        padding: 6rem 4rem;
+    }
+}
+@media screen and (max-width:630px){
+    .rating p{
+        font-size: 1rem;
+        margin-top: .7rem;
+    }
+   .rating{
+    flex-direction: column;
+    padding: .8rem 3rem;
+   }
+    main{
+        padding: 6rem 3rem;
+    background-image: url(./images/bg-pattern-bottom-mobile.svg),url(./images/bg-pattern-top-mobile.svg);
+        
+    }
+   
+}
