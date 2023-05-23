@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+:root{
+    --Light-red: hsla(0, 100%, 67%, 25%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsla(234, 85%, 45%,80%);
+
+--Light-slate-blue-background: hsl(252, 100%, 67%);
+--Light-royal-blue-background: hsl(241, 81%, 54%);
+
+--Violet-blue-circle: hsla(256, 72%, 46%, 1);
+--Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+
+  }
+  body{
+    background-color: var(--Pale-blue);
+  }
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--Pale-blue);
+}
+.container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.result,.summary{
+    background: linear-gradient(var(--Light-slate-blue-background),var(--Light-royal-blue-background));
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 2rem;
+    border-radius: 25px;
+}
+.result h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--Light-lavender);
+    margin-bottom: 10px;
+}
+.result p{
+    font-size: 1.35rem;
+    width: 17.5rem;
+}
+.summary{
+    background: var(--White);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: relative;
+    left: -15px;
+}.result{
+    z-index: 2;
+}
+.circle{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background: linear-gradient(var(--Violet-blue-circle),var(--Persian-blue-circle));
+    color: var(--Light-lavender);
+    text-align: center;
+    padding-top: 1.8rem;
+}
+.circle span{
+    font-size: 4rem;
+    color: var(--White);
+}
+.great{
+    color: var(--White);
+    padding: 2rem 1rem;
+}
+.great p{
+    margin-top: 1rem;
+    color: var(--Light-lavender);
+}
+.summary h2{
+    color: var(--Dark-gray-blue);
+    margin-right: 4.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    top: -5;
+    left: -3rem;
+    font-size: 1.8rem;
+}
+.card{
+    padding: 1rem 0.6rem;
+    width: 18rem;
+    background-color: var(--Light-red);
+    margin-bottom: .5rem;
+    
+}.card span{
+    font-weight: 500;
+    font-size: 20px;
+
+}
+span img{
+    width: 20px;
+    position: relative;
+    top: 2px;
+}
+button{
+    width:18rem;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--Dark-gray-blue);
+    padding: 1rem 0.8rem;
+    font-size: 1.2rem;
+    color: var(--White);
+    font-weight: 800;
+    margin-top: 2rem;
+    position: relative;
+    bottom: 1rem;
+}
+@media screen and (max-width:900px) {
+    .result,.summary{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 1rem;
+    }
+    .summary{
+        left: -14px;
+    }
+    .circle{
+        width: 8rem;
+        height: 8rem;
+    padding-top: .5rem;
+    }
+    .card{
+        padding: .8rem 0.5rem;
+        width: 15rem;
+        margin-bottom: .6rem;
+    }
+    .summary h2 {
+        left: -1rem;
+      }
+    button{
+        width:15rem;
+        padding: 0.8rem 0.6rem;
+        font-size: 1.2rem;
+        color: var(--White);
+        font-weight: 800;
+        margin-top: 2rem;
+        position: relative;
+        bottom: 1rem;
+    }
+}
+@media screen and (max-width:700px) {
+    .container{
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .summary{
+       padding-left: 4rem;
+       padding-right: 4rem;
+       left: unset;
+       bottom: 1rem;
+       padding-top: 1.5rem;
+    }
+}
