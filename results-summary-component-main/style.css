@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 :root{
     --Light-red: hsla(0, 100%, 67%, 25%);
---Orangey-yellow: hsl(39, 100%, 56%);
---Green-teal: hsl(166, 100%, 37%);
---Cobalt-blue: hsla(234, 85%, 45%,80%);
+--Orangey-yellow: hsla(39, 100%, 56%,25%);
+--Green-teal: hsla(166, 100%, 37%,25%);
+--Cobalt-blue: hsla(234, 85%, 45%,25%);
 
 --Light-slate-blue-background: hsl(252, 100%, 67%);
 --Light-royal-blue-background: hsl(241, 81%, 54%);
