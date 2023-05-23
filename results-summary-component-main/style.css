@@ -112,6 +112,17 @@ justify-content: space-between;
     font-size: 20px;
 
 }
+.card:nth-child(2){
+    background-color: var(--Orangey-yellow);
+}
+.card:nth-child(3){
+    background-color: var(--Green-teal);
+}
+.card:nth-child(3){
+    background-color: var(--Cobalt-blue:);
+}
+
+
 span img{
     width: 20px;
     position: relative;
